@@ -1,0 +1,423 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>SEO Self-Assessment Quiz</title>
+
+    <link rel="stylesheet" href="css/style.css" />
+
+    <!-- JavaScript will be added after the quiz structure is complete -->
+    <script src="js/quiz.js" defer></script>
+  </head>
+
+  <body class="page page-quiz">
+    <!-- Header section for the website title and main navigation -->
+    <header id="top" class="site-header">
+      <div class="container header-content">
+        <h1 class="site-title">Search Engine Optimization</h1>
+
+        <p class="site-tagline">
+          An informational website about SEO and how it helps websites get found
+          online.
+        </p>
+
+        <!-- Main navigation menu used on every page -->
+        <nav id="main-nav" class="site-nav" aria-label="Main navigation">
+          <ul class="nav-list">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">Home</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="what-is-seo.html">What Is SEO?</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="on-page-seo.html">On-Page SEO</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="technical-seo.html">Technical SEO</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="off-page-seo.html">Off-Page SEO</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="key-concepts.html">Key Concepts</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link active" href="quiz.html">SEO Quiz</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="references.html">References</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="about.html">About</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <!-- Main content for the SEO quiz page -->
+    <main id="main-content" class="site-main">
+      <div class="container main-content">
+        <section id="quiz-introduction" class="content-section">
+          <h2 class="section-title">SEO Quiz</h2>
+
+          <p>
+            This quiz reviews important ideas from the website, including how
+            search engines discover pages and the differences between on-page,
+            technical, and off-page SEO.
+          </p>
+
+          <p>
+            Answer all five questions and select the submit button when you are
+            finished. Your score and the correct answer for each question will
+            appear on this page.
+          </p>
+
+          <p class="quiz-instructions">
+            A score of 70 percent or higher is required to pass.
+          </p>
+        </section>
+
+        <!-- SEO quiz form -->
+        <section id="quiz-section" class="content-section">
+          <h2 class="section-title">Quiz Questions</h2>
+
+          <form id="seo-quiz" class="quiz-form" novalidate>
+            <!-- Question 1: Fill in the blank -->
+            <fieldset id="question-one" class="quiz-question">
+              <legend class="quiz-question-title">
+                Question 1: Fill in the Blank
+              </legend>
+
+              <label for="question-one-answer">
+                SEO stands for search engine ________.
+              </label>
+
+              <input
+                type="text"
+                id="question-one-answer"
+                name="question-one-answer"
+                class="quiz-text-input"
+                autocomplete="off"
+                placeholder="Enter your answer"
+              />
+
+              <div
+                id="question-one-result"
+                class="question-result"
+                aria-live="polite"
+              ></div>
+            </fieldset>
+
+            <!-- Question 2: Multiple choice -->
+            <fieldset id="question-two" class="quiz-question">
+              <legend class="quiz-question-title">
+                Question 2: Multiple Choice
+              </legend>
+
+              <p>
+                Which type of SEO focuses on page titles, headings, written
+                content, images, and internal links?
+              </p>
+
+              <div class="answer-option">
+                <input
+                  type="radio"
+                  id="question-two-a"
+                  name="question-two-answer"
+                  value="on-page-seo"
+                />
+                <label for="question-two-a">On-Page SEO</label>
+              </div>
+
+              <div class="answer-option">
+                <input
+                  type="radio"
+                  id="question-two-b"
+                  name="question-two-answer"
+                  value="technical-seo"
+                />
+                <label for="question-two-b">Technical SEO</label>
+              </div>
+
+              <div class="answer-option">
+                <input
+                  type="radio"
+                  id="question-two-c"
+                  name="question-two-answer"
+                  value="off-page-seo"
+                />
+                <label for="question-two-c">Off-Page SEO</label>
+              </div>
+
+              <div class="answer-option">
+                <input
+                  type="radio"
+                  id="question-two-d"
+                  name="question-two-answer"
+                  value="email-marketing"
+                />
+                <label for="question-two-d">Email marketing</label>
+              </div>
+
+              <div
+                id="question-two-result"
+                class="question-result"
+                aria-live="polite"
+              ></div>
+            </fieldset>
+
+            <!-- Question 3: Multiple choice -->
+            <fieldset id="question-three" class="quiz-question">
+              <legend class="quiz-question-title">
+                Question 3: Multiple Choice
+              </legend>
+
+              <p>
+                Which type of SEO focuses on website speed, mobile-friendly
+                design, and site structure?
+              </p>
+
+              <div class="answer-option">
+                <input
+                  type="radio"
+                  id="question-three-a"
+                  name="question-three-answer"
+                  value="off-page-seo"
+                />
+                <label for="question-three-a">Off-Page SEO</label>
+              </div>
+
+              <div class="answer-option">
+                <input
+                  type="radio"
+                  id="question-three-b"
+                  name="question-three-answer"
+                  value="technical-seo"
+                />
+                <label for="question-three-b">Technical SEO</label>
+              </div>
+
+              <div class="answer-option">
+                <input
+                  type="radio"
+                  id="question-three-c"
+                  name="question-three-answer"
+                  value="on-page-seo"
+                />
+                <label for="question-three-c">On-Page SEO</label>
+              </div>
+
+              <div class="answer-option">
+                <input
+                  type="radio"
+                  id="question-three-d"
+                  name="question-three-answer"
+                  value="social-media"
+                />
+                <label for="question-three-d">Social media</label>
+              </div>
+
+              <div
+                id="question-three-result"
+                class="question-result"
+                aria-live="polite"
+              ></div>
+            </fieldset>
+
+            <!-- Question 4: Multiple choice -->
+            <fieldset id="question-four" class="quiz-question">
+              <legend class="quiz-question-title">
+                Question 4: Multiple Choice
+              </legend>
+
+              <p>Which of the following is an example of off-page SEO?</p>
+
+              <div class="answer-option">
+                <input
+                  type="radio"
+                  id="question-four-a"
+                  name="question-four-answer"
+                  value="adding-heading"
+                />
+                <label for="question-four-a"
+                  >Adding a heading to a webpage</label
+                >
+              </div>
+
+              <div class="answer-option">
+                <input
+                  type="radio"
+                  id="question-four-b"
+                  name="question-four-answer"
+                  value="earning-backlink"
+                />
+                <label for="question-four-b">
+                  Earning a backlink from another website
+                </label>
+              </div>
+
+              <div class="answer-option">
+                <input
+                  type="radio"
+                  id="question-four-c"
+                  name="question-four-answer"
+                  value="compressing-image"
+                />
+                <label for="question-four-c">Compressing a large image</label>
+              </div>
+
+              <div class="answer-option">
+                <input
+                  type="radio"
+                  id="question-four-d"
+                  name="question-four-answer"
+                  value="changing-title"
+                />
+                <label for="question-four-d">Changing a page title</label>
+              </div>
+
+              <div
+                id="question-four-result"
+                class="question-result"
+                aria-live="polite"
+              ></div>
+            </fieldset>
+
+            <!-- Question 5: Multi-selection -->
+            <fieldset id="question-five" class="quiz-question">
+              <legend class="quiz-question-title">
+                Question 5: Select All That Apply
+              </legend>
+
+              <p>
+                Which of the following are the three main areas of SEO? Select
+                all that apply.
+              </p>
+
+              <div class="answer-option">
+                <input
+                  type="checkbox"
+                  id="question-five-a"
+                  name="question-five-answer"
+                  value="on-page-seo"
+                />
+                <label for="question-five-a">On-Page SEO</label>
+              </div>
+
+              <div class="answer-option">
+                <input
+                  type="checkbox"
+                  id="question-five-b"
+                  name="question-five-answer"
+                  value="technical-seo"
+                />
+                <label for="question-five-b">Technical SEO</label>
+              </div>
+
+              <div class="answer-option">
+                <input
+                  type="checkbox"
+                  id="question-five-c"
+                  name="question-five-answer"
+                  value="off-page-seo"
+                />
+                <label for="question-five-c">Off-Page SEO</label>
+              </div>
+
+              <div class="answer-option">
+                <input
+                  type="checkbox"
+                  id="question-five-d"
+                  name="question-five-answer"
+                  value="email-marketing"
+                />
+                <label for="question-five-d">Email marketing</label>
+              </div>
+
+              <div class="answer-option">
+                <input
+                  type="checkbox"
+                  id="question-five-e"
+                  name="question-five-answer"
+                  value="graphic-design"
+                />
+                <label for="question-five-e">Graphic design</label>
+              </div>
+
+              <div
+                id="question-five-result"
+                class="question-result"
+                aria-live="polite"
+              ></div>
+            </fieldset>
+
+            <!-- Quiz form controls -->
+            <div class="quiz-controls">
+              <button type="submit" id="submit-quiz" class="quiz-button">
+                Submit Quiz
+              </button>
+
+              <button
+                type="reset"
+                id="reset-quiz"
+                class="quiz-button quiz-reset-button"
+              >
+                Retake Quiz
+              </button>
+            </div>
+          </form>
+        </section>
+
+        <!-- Overall quiz results -->
+        <section
+          id="quiz-results"
+          class="content-section quiz-results"
+          aria-live="polite"
+          hidden
+        >
+          <h2 class="section-title">Quiz Results</h2>
+
+          <div id="overall-result" class="overall-result">
+            <p id="pass-fail-result"></p>
+            <p id="total-score"></p>
+            <p id="percentage-score"></p>
+          </div>
+
+          <div id="question-results-summary">
+            <h3 class="results-subheading">Question Review</h3>
+
+            <div id="results-list"></div>
+          </div>
+        </section>
+      </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+      <div class="container footer-content">
+        <p>
+          This website is a class project for
+          <a
+            href="https://ksuweb.github.io/IT3203/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            IT 3203 Web Development </a
+          >.
+        </p>
+      </div>
+    </footer>
+  </body>
+</html>
