@@ -139,6 +139,8 @@ body {
 
 .main-content {
   display: grid;
+  width: 60%;
+  max-width: 900px;
   gap: var(--section-spacing);
 }
 
@@ -166,6 +168,7 @@ body {
 }
 
 .content-section {
+  width: 100%;
   background-color: var(--white);
   padding: 22px;
   border: 1px solid var(--medium-gray);
@@ -615,6 +618,10 @@ body {
 @media (max-width: 700px) {
   .nav-toggle {
     display: block;
+  }
+
+  .main-content {
+    width: 90%;
   }
 
   .site-nav {
